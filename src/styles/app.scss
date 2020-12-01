@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;600;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  box-sizing: border-box;
+}
+
+.drawer__shrink_in {
+  width: 65vw;
+  margin-left: 35vw;
+  transition: all 0.3s ease-in-out;
+  button: {
+    margin-left: 10px;
+  }
+}
+
+@import './player';
+@import './song';
+@import './library';
+@import './navbar';

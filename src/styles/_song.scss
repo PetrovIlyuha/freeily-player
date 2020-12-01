@@ -1,0 +1,53 @@
+.song-container {
+  min-height: 60vh;
+  background-color: #bce8bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 20%;
+    height: 15%;
+    object-fit: contain;
+    box-shadow: 4px 5px 14px -4px rgba(0, 0, 0, 0.2);
+  }
+  h1,
+  h2 {
+    padding: 14px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: rgb(105, 56, 56);
+      cursor: crosshair;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.spinning__cover {
+  animation: rotating 50s linear infinite;
+  transform: rotate();
+}
+
+@media screen and (max-width: 600px) {
+  .song-container {
+    h1,
+    h2 {
+      font-size: 1.4em;
+    }
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
